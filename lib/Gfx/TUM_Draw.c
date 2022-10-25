@@ -1528,7 +1528,7 @@ int tumDrawGetLoadedImageSize(image_handle_t img, int *w, int *h)
     return 0;
 }
 
-int __attribute_deprecated__ tumDrawImage(char *filename, signed short x,
+int __attribute__((deprecated)) tumDrawImage(char *filename, signed short x,
         signed short y)
 {
     INIT_JOB(job, DRAW_IMAGE);
@@ -1609,14 +1609,14 @@ err:
     return -1;
 }
 
-int __attribute_deprecated__ tumGetImageSize(char *filename, int *w, int *h)
+int __attribute__((deprecated)) tumGetImageSize(char *filename, int *w, int *h)
 {
     char full_filename[PATH_MAX + 1];
     realpath(filename, full_filename);
     return _getImageSize(full_filename, w, h);
 }
 
-int __attribute_deprecated__ tumDrawScaledImage(char *filename, signed short x,
+int __attribute__((deprecated)) tumDrawScaledImage(char *filename, signed short x,
         signed short y, float scale)
 {
     INIT_JOB(job, DRAW_SCALED_IMAGE);

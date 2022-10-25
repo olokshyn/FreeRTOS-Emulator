@@ -21,7 +21,8 @@
 @endverbatim
  */
 
-#include <linux/unistd.h>
+#include <unistd.h>
+#include <limits.h>
 #include <assert.h>
 
 #include "TUM_Event.h"

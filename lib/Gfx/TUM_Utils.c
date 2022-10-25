@@ -33,6 +33,7 @@
 #include <libgen.h>
 #include <assert.h>
 #include <dirent.h>
+#include <limits.h>
 
 #include "TUM_Utils.h"
 #include "TUM_Print.h"

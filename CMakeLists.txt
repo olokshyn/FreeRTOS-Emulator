@@ -28,6 +28,9 @@ else()
     find_package(SDL2_ttf REQUIRED)
     include_directories(${SDL2_TTF_INCLUDE_DIRS})
 
+    if(APPLE)
+        include_directories(/opt/homebrew/include)
+    endif()
 
     SET(PROJECT_INCLUDES
         ${PROJECT_SOURCE_DIR}/lib/FreeRTOS_Kernel/include

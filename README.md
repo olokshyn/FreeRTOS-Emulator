@@ -46,8 +46,25 @@ Additional requirements for development:
 sudo pacman -S clang
 ```
 
+### Mac
 
-### Windows/Mac
+First, configure the developer tools:
+```bash
+xcode-select --install
+```
+
+Install `brew` as described on the [Homebrew page](https://brew.sh/):
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Install the SDL2 library:
+```
+brew install sdl2 sdl2_ttf sdl2_mixer sdl2_image sdl2_gfx
+```
+
+
+### Windows
 ¯\\(°_o)/¯
 
 ....install linux?
